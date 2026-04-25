@@ -1,0 +1,73 @@
+# Windows-Compatible RAG System Dependencies
+# For Hands_on_RAG_Windows.ipynb - OpenRouter Integration
+
+# Core LangChain Components (CPU-only)
+langchain==0.3.27
+langchain-community==0.3.27
+langchain-core==0.3.80
+langchain-text-splitters==0.3.11
+
+# OpenRouter Integration
+openai>=1.0.0
+python-dotenv>=1.0.0
+
+# Document Processing
+pypdf==6.1.3
+
+# Embeddings and Vector Store (CPU-only)
+sentence_transformers==5.1.1
+faiss-cpu==1.12.0
+
+# Hugging Face Integration (CPU-only)
+huggingface_hub==0.35.3
+
+# Core Dependencies
+requests>=2.32.0
+numpy>=1.26.0
+PyYAML>=6.0.3
+aiohttp>=3.8.3
+tenacity>=9.1.0
+pydantic>=2.7.4
+SQLAlchemy>=2.0.0
+dataclasses-json>=0.6.0
+httpx>=0.23.0
+typing-extensions>=4.10.0
+filelock>=3.20.0
+networkx>=3.6.1
+jinja2>=3.1.6
+fsspec>=2025.3.0
+tqdm>=4.67.0
+scikit-learn>=1.6.0
+scipy>=1.16.0
+Pillow>=11.3.0
+packaging>=25.0
+regex>=2025.11.0
+tokenizers<=0.23.0,>=0.22.0
+safetensors>=0.4.3
+MarkupSafe>=3.0.0
+joblib>=1.5.0
+threadpoolctl>=3.6.0
+anyio>=4.12.0
+httpcore>=1.0.0
+h11>=0.16.0
+jsonpatch>=1.33.0
+orjson>=3.11.0
+requests-toolbelt>=1.0.0
+uuid-utils>=0.12.0
+zstandard>=0.23.0
+annotated-types>=0.6.0
+pydantic-core>=2.41.0
+typing-inspect>=0.9.0
+mypy-extensions>=1.1.0
+marshmallow>=3.26.0
+charset_normalizer>=3.4.0
+idna>=3.11
+urllib3>=2.5.0
+certifi>=2025.11.12
+greenlet>=3.3.0
+
+# NOTE: This requirements.txt is optimized for Windows compatibility:
+# - Removed all CUDA/GPU dependencies
+# - Added OpenRouter integration packages
+# - Kept core RAG functionality intact
+# - No large model downloads required
